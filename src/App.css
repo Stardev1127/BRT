@@ -1,0 +1,650 @@
+/*NAVBAR CSS*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 8px 6px -6px #999;;
+}
+
+.ras-brand {
+    width: 80px;
+}
+
+.navbar .nav-list {
+    color: black !important;
+    display: flex;
+}
+
+.navbar .nav-list li {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1.4rem;
+    padding: 3px 10px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+
+.nav-link:hover {
+    color: #013220 !important;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #1F3D0C;
+    font-weight: 900;
+}
+
+.current-user-info {
+    border: 1.5px solid gray;
+    border-radius: 50px;
+    background-color: white;
+    padding: 4px 12px !important;
+    margin-right: 100px !important;
+}
+
+@media(max-width: 426px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .blogify-logo {
+        width: 280px;
+    }
+
+    .navbar .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin-bottom: 8px;
+    }
+
+    .current-user-info {
+        border: 1px solid gray;
+        border-radius: 50px;
+        background-color: whitesmoke;
+        padding: 8px 8px !important;
+        margin-right: 2px !important;
+    }
+}
+
+@media(max-width: 321px) {
+    .current-user-info {
+        border: 1px solid gray;
+        font-size: 18px !important;
+        border-radius: 50px;
+        background-color: whitesmoke;
+        padding: 10px 15px !important;
+        margin-right: 2px !important;
+    }
+}
+/**/
+
+.ras-logo {
+    width: 250px;
+}
+
+.main {
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-card {
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform .2s;
+    margin-right: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-card:hover {
+    transform: scale(1.025);
+}
+
+.main-card-img {
+    width: 225px;
+}
+
+/*ADMIN LOGIN*/
+.admin-login-page-container {
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.feedback-form {
+    border-radius: 15px;
+    padding: 10px;
+    width: 350px;
+}
+
+.log-form {
+    border: 1.8px solid black;
+    border-radius: 15px;
+    padding: 45px;
+    width: 350px;
+}
+
+.log-form input[type=text], input[type=email], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.log-form-btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.log-form-btn:hover {
+    background-color: #45a049;
+}
+
+.log-form-err {
+    color: red;
+    border: 1px solid gray;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    margin: 0 35px;
+    padding: 5px;
+}
+
+/* Admin Home Page */
+.admin-main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.admin-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 35px;
+    grid-row-gap: 40px;
+}
+
+.admin-card {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.admin-card-img {
+    width: 100px;
+}
+
+.admin-logout-btn {
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    border: 1.5px solid black;
+}
+
+/*Get Users Table*/
+.get-users-container {
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.list-of-users {
+    border: 2px solid forestgreen;
+    width: 600px;
+    height: 110px;
+  }
+    
+.user-table-heading {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.user-table-values {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.reports-page {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.positive-sales {
+    border: 1.5px solid whitesmoke;
+    border-radius: 15px;
+    background-color: #45a049;
+    color: white;
+    width: 250px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.negative-sales {
+    border: 1.5px solid whitesmoke;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    width: 250px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+/* Get Order Table */
+.get-orders-container {
+    width: 90%;
+    max-width: 1296px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.customer-home-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.list-of-orders {
+    border: 2px solid forestgreen;
+    width: 950px;
+    height: 110px;
+  }
+
+.order-table {
+    border: 2px solid forestgreen;
+    width: 1150px;
+    height: 110px;
+  }
+    
+.order-table-heading {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.order-table-values {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+/**/
+.customer-auth-btn {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 7px 20px;
+    border: 1.75px solid darkgreen;
+    border-radius: 14px;
+    background: #04AA6D;
+    color: whitesmoke;
+    transition: .2s ease-in-out;
+}
+
+.customer-auth-btn:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* items page */
+.manage-items-page {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.menu-items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+}
+
+.c-menu-items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+}
+
+.item-card {
+    padding: 20px 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item-card-img {
+    width: 200px !important;
+    height: 225px !important;
+}
+
+.item-btn-container {
+    justify-content: space-around !important;
+    display: flex !important;
+}
+
+.item-btn-edit {
+    background: lightgreen;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 9px;
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.item-btn-add-cart {
+    background: green;
+    color: white;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 9px;
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.item-btn-dlt {
+    background: red;
+    color: white;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 9px;
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.add-item-link {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1.75px solid purple;
+    background: blueviolet;
+    color: white;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 65%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+  
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.blog-post {
+    background-color: lightgreen;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.blog-post:hover {
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+  
+  /* Style the submit button */
+  .item-post {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .row {
+      display: flex;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    width: 25%;
+    margin-top: 6px;
+    margin-left: 25px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+.order-success-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*CART*/
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-items-container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-img {
+    height: 160px !important;
+    width: 180px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.list-of-cart {
+    border: 2px solid forestgreen;
+    width: 750px;
+    height: 110px;
+  }
+
+.checkout-btn{ 
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.checkout-btn:hover {
+    border: 1px solid black;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.cart-action-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart-action-btn {
+    border: 1px solid black;
+    border-radius: 35%;
+    padding: 8px 14px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cart-action-btn:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* ORDER STATUS BUTTONS */
+.completed-btn {
+    padding: 0px 25px;
+    background-color: #04AA6D;
+    color: whitesmoke;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.prepared-btn {
+    padding: 0px 25px;
+    background-color: #9B870C;
+    color: whitesmoke;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.mark-as-prepared-btn {
+    padding: 2px 20px;
+    background-color: #ffa700;
+    color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.mark-as-completed-btn {
+    padding: 2px 20px;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.download-bill-btn {
+    padding: 2px 20px;
+    background-color: deepskyblue;
+    color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.pending-btn {
+    padding: 0px 25px;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* INVOICE */
+.bill-container {
+    width: 90%;
+    padding: 15px;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 2px solid gray;
+}
+
+.bill-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bill-top-left img {
+    width: 50%;
+}
+
+.bill-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill-title {
+    text-align: center;
+}
+
+.bill-date-time {
+    text-align: center;
+    padding-bottom: 2px;
+    border-bottom: 3px dotted black;
+}
+
+.list-of-bill {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    text-align: center;
+}
+
+.bill-amount-table {
+    width: 150px;
+    float: right;
+    margin-right: 40px;
+}
+
+.bill-footer {
+    text-align: center;
+}
